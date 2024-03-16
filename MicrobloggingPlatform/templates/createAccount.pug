@@ -1,0 +1,24 @@
+doctype html
+head
+  link(rel='stylesheet' type='text/css' href='/static/css/main.css')
+  meta(charset='UTF-8')
+  title ~ make an account for a better experience ~
+
+h1 ~ make an account for a better experience ~
+//- img(src='../images/writing.jpg' alt='Artistic Writing Image')
+br
+
+.cssRoundBox
+  form(action='/createAccount' method='post')
+    .login
+      label(for=`newUser`) Make a username: 
+      input#newUser(type='text' name='newUser' required='' autocomplete = 'yes')
+    br
+    .login
+      label(for=`newPass`) Make a password: 
+      input#newPass(type='password' name='newPass' required='')
+    br
+    button.generalButtons CREATE ACCOUNT
+    .error #{error}
+img(src='../images/flower.png' alt='Flower Image')
+include nav.pug

@@ -1,0 +1,10 @@
+nav
+  .navElement
+    a(href='/home') ~ home ~
+  .navElement
+    a(href='/posts') ~ that&apos;s what I said ~
+  .navElement
+    if user
+      a(href='/logout') ~ logout ~
+    else
+      a(href='/') ~ login ~

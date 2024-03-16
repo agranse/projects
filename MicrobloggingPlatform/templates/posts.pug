@@ -1,0 +1,34 @@
+doctype html
+head
+  link(rel='stylesheet' type='text/css' href='/static/css/main.css')
+  meta(charset='UTF-8')
+  title ~ that&apos;s what I said ~
+h1 ~ that&apos;s what I said ~
+
+button.view(onclick='changeView(this)') Change Viewing
+
+.cssRoundBox
+  p Share your thoughts...
+  form(action='/posts' method='post' id=`addingPost`)
+    textarea(type = "text" name="post" maxlength="200")
+    br
+    br
+    button.generalButtons SAVE
+each post in posts
+    .textPost(id=`post-${JSON.stringify(post.postID)}`)
+      p.postText(id=`message-${JSON.stringify(post.postID)}`) #{post.postMessage}
+      p.postAuthor(id=`author-${JSON.stringify(post.postID)}`) ~ #{post.username}
+      .buttons
+        span.likeLabel(id=`like-${JSON.stringify(post.postID)}`) #{post.postLikeCount} ❤️
+        button.postButton(onclick=`like(${JSON.stringify(post.postID)})`) LIKE
+        button.postButton(onclick=`edit(${JSON.stringify(post.postID)})`) EDIT
+        button.postButton(onclick=`deleting(${JSON.stringify(post.postID)})`) DELETE
+      .error(id=`error-${JSON.stringify(post.postID)}`)
+
+button.previous(onclick='previousPage(this)') Previous
+
+button.next(onclick='nextPage(this)') Next
+img(src='../images/flower.png' alt='Flower Image')
+include nav.pug
+
+script(src='/static/js/viewPostsButtons.js')

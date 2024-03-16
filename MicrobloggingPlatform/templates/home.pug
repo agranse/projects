@@ -1,0 +1,27 @@
+doctype html
+head
+  link(rel='stylesheet' type='text/css' href='/static/css/main.css')
+  meta(charset='UTF-8')
+  title ~ login for a better experience ~
+
+h1 ~ login for a better experience ~
+
+br
+
+.cssRoundBox
+  form(action='/login' method='post')
+    .login
+      label(for=`user`) Username: 
+      input#user(type='text' name='user' required='' autocomplete = 'yes')
+    br
+    .login
+      label(for=`pass`) Password: 
+      input#pass(type='password' name='pass' required='')
+    br
+    .error #{error}
+    button.generalButtons LOGIN
+  .loginLines
+    p Don&apos;t have an account? Make one 
+      a.createPageButton(href='/createAccount') HERE
+img(src='../images/flower.png' alt='Flower Image')
+include nav.pug

@@ -1,0 +1,20 @@
+Ir.o: Ir.cc Ir.h Election.h Ballot.h Result.h Candidate.h VoteableItem.h \
+ Party.h AuditFile.h IrResult.h IrBallot.h Scanner.h
+Cpl.o: Cpl.cc Cpl.h Election.h Ballot.h Result.h Candidate.h \
+ VoteableItem.h Party.h AuditFile.h CplResult.h
+AuditFile.o: AuditFile.cc AuditFile.h
+CplBallot.o: CplBallot.cc CplBallot.h Ballot.h
+CplResults.o: CplResults.cc CplResult.h Result.h Candidate.h \
+ VoteableItem.h Ballot.h Party.h
+IrResults.o: IrResults.cc IrResult.h Result.h Candidate.h VoteableItem.h \
+ Ballot.h Party.h
+Result.o: Result.cc Result.h Candidate.h VoteableItem.h Ballot.h Party.h
+VotingSystem.o: VotingSystem.cc Scanner.h Election.h Ballot.h Result.h \
+ Candidate.h VoteableItem.h Party.h AuditFile.h
+Scanner.o: Scanner.cc Scanner.h Election.h Ballot.h Result.h Candidate.h \
+ VoteableItem.h Party.h AuditFile.h Cpl.h CplBallot.h Ir.h IrBallot.h
+Party.o: Party.cc Party.h VoteableItem.h Ballot.h
+Candidate.o: Candidate.cc Candidate.h VoteableItem.h Ballot.h
+IrBallot.o: IrBallot.cc IrBallot.h Ballot.h
+Election.o: Election.cc Election.h Ballot.h Result.h Candidate.h \
+ VoteableItem.h Party.h AuditFile.h

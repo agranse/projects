@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&family=Whisper&display=swap');
+
+img {/*flower.png*/
+    width:10%;
+}
+body {/* applies to all pages */
+    background-color:black;
+    font-family: 'Playpen Sans', cursive;
+    text-align: center;
+    color: #F7EBEC;
+    margin-top: 5%;
+    text-shadow: 2px 2px 5px #1d1e2c;
+}
+h1 {/* applies to all pages */
+    font-weight: 900;
+    font-size: 300%;
+    text-align:center;
+    font-family: 'Whisper', cursive;
+    padding:1em;
+    padding-bottom: 0;
+}
+nav {/* navigation bar */
+    background-color: lightsteelblue;
+    display:flex;
+    justify-content: space-around;
+    min-width:100% ;
+    position: fixed;
+    left:0%;
+    top:0%;
+    height:7%;
+}
+.navElement {/* navigation bar */
+    padding-top: 0.7%;
+}
+a:link, a:visited {/* navigation bar and here button plus others */
+    text-decoration: none;
+    color: navy;
+    font-weight: 600;
+}
+a:hover {/* navigation bar and here button plus others */
+    color: #1d1e2c;
+}
+.cssRoundBox {/* createAccount form, create post form, login form */
+    font-size:120%;
+    font-weight: 400;
+    padding:1em;
+    margin: auto;
+    width: 60%;
+    border-top-color: lightsteelblue;
+    border-top-style: ridge;
+    border-top-width: 0.45em;
+}
+.error {/* error popup, related to login issues */
+    color: red;
+}
+input[type=text], input[type=password] {/*login and create account*/
+    background-color: #F7EBEC;
+    border:none;
+}
+textarea[type=text] {/* create and edit a post */
+    width: 75%;
+    height: 10em;
+    resize: none;
+    background-color: #F7EBEC;
+    border:none;
+}
+.postAuthor {/* author name of posts */
+    display: block;
+    text-align:right;
+    margin-right:10%;
+    font-weight:bold;
+    padding-bottom:0.5em;
+}
+.postText {/* individual messages in posts*/
+    text-align:left;
+    margin-left:7%;
+    font-size:120%;
+}
+.textPost {/*individual posts*/
+    max-width: 45%;
+    margin: auto;
+    padding:2em;
+    border-top-color: lightsteelblue;
+    border-top-style: ridge;
+    border-top-width: 0.5em;
+}
+.buttons {/* like count, like, edit, save buttons */
+    display:inline-block;
+    display:flex;
+    justify-content: space-around;
+}
+.postButton {/*edit like delete buttons*/
+    color:navy;
+    border: hidden;
+    background-color: lightsteelblue;
+    font-family: 'Playpen Sans', cursive;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px #1d1e2c;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 1em;
+}
+.postButton:hover {/*edit like delete buttons*/
+    color: #1d1e2c;
+}
+.likeLabel {/*label for like*/
+    font-weight: 600;
+}
+.view {/*change viewing button*/
+    color:navy;
+    border: hidden;
+    background-color:lightsteelblue;
+    font-family: 'Playpen Sans', cursive;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px #1d1e2c;
+    border-radius: 1em;
+    position: fixed;
+    top: 15%;
+    right:5%;
+    padding: 0.5em 1em 0.5em 1em;
+}
+.view:hover {/*change viewing button*/
+    color: #1d1e2c;
+}
+.generalButtons {/*save, login, create account buttons */
+    color:navy;
+    border: hidden;
+    background-color:lightsteelblue;
+    font-family: 'Playpen Sans', cursive;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px #1d1e2c;
+    border-radius: 1em;
+    padding: 0.5em 1em 0.5em 1em;
+}
+.generalButtons:hover {/*save, login, create account buttons */
+    color: #1d1e2c;
+}
+.createPageButton {/*here button/link */
+    color:navy;
+    border: hidden;
+    background-color:lightsteelblue;
+    font-family: 'Playpen Sans', cursive;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px #1d1e2c;
+    border-radius: 1em;
+    padding: 0.25em 0.5em 0.25em 0.5em;
+    font-size:80%;
+}
+.previous {/*previous page button*/
+    color:navy;
+    border: hidden;
+    background-color:lightsteelblue;
+    font-family: 'Playpen Sans', cursive;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px #1d1e2c;
+    border-radius: 1em;
+    padding: 0.5em 1em 0.5em 1em;
+    position: fixed;
+    bottom: 5%;
+    left:5%;
+}
+.previous:hover {/*previous page button*/
+    color: #1d1e2c;
+}
+.next {/*next page button*/
+    color:navy;
+    border: hidden;
+    background-color:lightsteelblue;
+    font-family: 'Playpen Sans', cursive;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px #1d1e2c;
+    border-radius: 1em;
+    padding: 0.5em 1em 0.5em 1em;
+    position: fixed;
+    bottom: 5%;
+    right:5%;
+}
+.next:hover {/*next page button*/
+    color: #1d1e2c;
+}
