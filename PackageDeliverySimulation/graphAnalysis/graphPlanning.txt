@@ -1,0 +1,9 @@
+Potential Graphs:
+Pie Chart:
+-deliveries split between packages delivered successfully the first time, packages stolen, and packages retrieved
+
+Bar graphs:
+-total number of thefts by strategy
+-total number of retrievals by strategy
+-average delivery distance by strategy
+
