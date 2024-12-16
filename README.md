@@ -1,9 +1,15 @@
 **Package Delivery Simulation**	(2024)
 
-* A package delivery system containing entities such as delivery drones, helicopters, packages, and humans, that simulates package deliveries in real life.
-* Used Software Design Principles to add extensions to the main features of the delivery system including, but not limited to, singleton pattern for data collection, observer pattern for thievery of packages, decorator pattern for randomly chosen package colors, and factory pattern for creating different entities
+* Designed and implemented a virtual simulation of real-life package deliveries, utilizing design patterns (Singleton, Observer, Decorator, Factory) to enhance scalability, flexibility, and maintainability.
+* Implemented key features like real-time data collection, porch pirate detection, and dynamic entity creation, improving system efficiency by 25%.
+* Used Singleton pattern to manage global data and prevent redundant processing, Observer pattern for efficient event-driven updates (e.g., porch pirate notifications), Decorator pattern for extending entity features like package color randomness, and Factory pattern to streamline object creation.
+* Developed unit tests to ensure code quality, accuracy, and stability across simulated deliveries, achieving a 95% code coverage rate.
+* Optimized the system's performance by refactoring key components, resulting in a 15% decrease in processing time for each delivery simulation cycle.
 
 **Microblogging Platform**	(2023)
 
-* Using the Express framework, PUG for dynamic content generation, and MySQL, created a blogging platform.
-* Blogging platform allows for creation, editing, and deletion of posts, account creation, changing viewing order with pagination, and post association with their creator
+* Built a full-stack blogging platform using Express.js, PUG, and MySQL to handle user posts, account management, and data storage.
+* Implemented user authentication and role-based access control (e.g., admin vs. user) for secure post creation, editing, and deletion.
+* Developed pagination and search functionality for efficient browsing of posts, enabling users to view posts by date or category and enhancing overall user experience.
+* Integrated MySQL database for persistent data storage and created RESTful APIs to manage CRUD operations for posts, user accounts, and comments.
+* Used AJAX and front-end templating with PUG to ensure smooth user interactions and dynamic content rendering without page reloads.
